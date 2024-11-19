@@ -1,0 +1,45 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+#bar {
+    display: flex;
+    align-items: center;
+    margin: 20px auto;
+}
+
+#taskInput {
+    flex-grow: 1;
+    padding: 5px;
+}
+
+#addTaskButton {
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+#taskList {
+    list-style-type: none; /* Remove bullet points */
+    padding: 0;
+    margin-top: 20px;
+}
+
+#taskList li {
+    padding: 5px;
+    border-bottom: 1px solid #ccc; /* Add a separator */
+    display: flex;
+    justify-content: space-between; /* Space out text and delete button */
+    align-items: center;
+}
+
+.delete-button {
+    background: transparent;
+    border: none;
+    color: red;
+    cursor: pointer;
+    font-size: 20px; /* Increase the size of the delete button */
+}
+
+.delete-button:hover {
+    color: darkred; /* Change color on hover */
+}
